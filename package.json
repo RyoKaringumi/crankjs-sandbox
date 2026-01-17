@@ -10,7 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@b9g/crank": "^0.7.3"
+    "@b9g/crank": "^0.7.3",
+    "axios": "^1.13.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

@@ -1,5 +1,6 @@
 /** @jsxImportSource @b9g/crank */
 
+import AxiosPage from "./axios/AxisoPage";
 import Counter from "./Counter";
 import Link from "./route/Link";
 import Route from "./route/Route";
@@ -27,13 +28,19 @@ export default function App() {
 					<hr/>
 					<ToDo/>
 					<a href="/other">go to other page(a tag)</a>
+					<br/>
 					<Link to="/other">go to other page(Link component)</Link>
+					<br/>
+					<Link to="/axios">go to axios page</Link>
 				</div>
 			</Route>
 			<Route path="/other">
 				<div>
 					other page
 				</div>
+			</Route>
+			<Route path="/axios">
+				<AxiosPage/>
 			</Route>
 		</Router>
 	);

@@ -9,6 +9,7 @@ import Simple from "./Simple";
 import Timer from "./Timer";
 import ToDo from "./todo/Todo";
 import SuspensePage from "./examples/suspense/SuspensePage";
+import Clock from "./Clock";
 
 export default function App() {
 	const component = <Simple message="hello"/>;
@@ -17,7 +18,8 @@ export default function App() {
 		<Router>
 			<Route path="/">
 				<div>
-					aaa
+					MainPage
+					<Clock/>
 					{/* <Counter/> */}
 					<ul>
 						<li>item 1</li>

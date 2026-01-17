@@ -1,10 +1,10 @@
 /** @jsxImportSource @b9g/crank */
 
-import Clock from "./Clock";
-import Counter from "./Counter";
+import Clock from "./components/Clock";
+import Counter from "./components/Counter";
 import Link from "./route/Link";
 import Simple from "./Simple";
-import Timer from "./Timer";
+import Timer from "./components/Timer";
 import ToDo from "./todo/Todo";
 
 export default function MainPage(){

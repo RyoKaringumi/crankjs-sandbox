@@ -19,6 +19,7 @@ export default function *ToDo(this: Context){
 					const input = form.elements.namedItem("todoInput") as HTMLInputElement;
 					const text = input.value.trim();
 					if(text){
+						// refreshを利用することで、このコンポーネントを再レンダリングできる
 						this.refresh(()=>{
 							items.push({text, completed:false});
 							input.value = "";
@@ -33,6 +34,9 @@ export default function *ToDo(this: Context){
 				{items.map(item=>(
 					<div>
 						<input type="checkbox" checked={item.completed} onChange={(e)=>{
+							// チェックボックスの状態が変わったときに、項目のcompletedプロパティを更新する
+							// refreshを利用して再レンダリングする
+							// なお、Reactと違い、mutableな操作でも問題なく、refreshを呼び出せばよい
 							this.refresh(()=>{
 								item.completed = e.target.checked;	
 							});

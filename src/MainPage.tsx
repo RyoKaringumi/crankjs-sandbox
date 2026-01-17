@@ -29,6 +29,8 @@ export default function MainPage(){
 			<Link to="/examples/axios">go to axios page</Link>
 			<br/>
 			<Link to="/examples/suspense">go to suspense page</Link>
+			<br/>
+			<Link to="/examples/async-generator">go to async generator page</Link>
 		</div>
 	)
 }

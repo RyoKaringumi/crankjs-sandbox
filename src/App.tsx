@@ -6,6 +6,7 @@ import Router from "./route/Router";
 import Simple from "./Simple";
 import SuspensePage from "./examples/suspense/SuspensePage";
 import MainPage from "./MainPage";
+import AsyncGeneratorPage from "./examples/async-generator/AsyncGeneratorPage";
 
 export default function App() {
 	const component = <Simple message="hello"/>;
@@ -25,6 +26,9 @@ export default function App() {
 			</Route>
 			<Route path="/examples/suspense">
 				<SuspensePage/>
+			</Route>
+			<Route path="/examples/async-generator">
+				<AsyncGeneratorPage/>
 			</Route>
 		</Router>
 	);

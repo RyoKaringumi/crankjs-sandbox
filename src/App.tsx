@@ -1,6 +1,6 @@
 /** @jsxImportSource @b9g/crank */
 
-import AxiosPage from "./axios/AxisoPage";
+import AxiosPage from "./examples/axios/AxisoPage";
 import Counter from "./Counter";
 import Link from "./route/Link";
 import Route from "./route/Route";
@@ -8,6 +8,7 @@ import Router from "./route/Router";
 import Simple from "./Simple";
 import Timer from "./Timer";
 import ToDo from "./todo/Todo";
+import SuspensePage from "./examples/suspense/SuspensePage";
 
 export default function App() {
 	const component = <Simple message="hello"/>;
@@ -31,7 +32,9 @@ export default function App() {
 					<br/>
 					<Link to="/other">go to other page(Link component)</Link>
 					<br/>
-					<Link to="/axios">go to axios page</Link>
+					<Link to="/examples/axios">go to axios page</Link>
+					<br/>
+					<Link to="/examples/suspense">go to suspense page</Link>
 				</div>
 			</Route>
 			<Route path="/other">
@@ -39,8 +42,11 @@ export default function App() {
 					other page
 				</div>
 			</Route>
-			<Route path="/axios">
+			<Route path="/examples/axios">
 				<AxiosPage/>
+			</Route>
+			<Route path="/examples/suspense">
+				<SuspensePage/>
 			</Route>
 		</Router>
 	);

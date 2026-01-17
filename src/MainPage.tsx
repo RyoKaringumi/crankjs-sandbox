@@ -31,6 +31,8 @@ export default function MainPage(){
 			<Link to="/examples/suspense">go to suspense page</Link>
 			<br/>
 			<Link to="/examples/async-generator">go to async generator page</Link>
+			<br/>
+			<Link to="/examples/timing">go to timing page</Link>
 		</div>
 	)
 }

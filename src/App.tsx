@@ -7,6 +7,7 @@ import Simple from "./Simple";
 import SuspensePage from "./examples/suspense/SuspensePage";
 import MainPage from "./MainPage";
 import AsyncGeneratorPage from "./examples/async-generator/AsyncGeneratorPage";
+import TimingPage from "./examples/timing/TimingPage";
 
 export default function App() {
 	const component = <Simple message="hello"/>;
@@ -29,6 +30,9 @@ export default function App() {
 			</Route>
 			<Route path="/examples/async-generator">
 				<AsyncGeneratorPage/>
+			</Route>
+			<Route path="/examples/timing">
+				<TimingPage/>
 			</Route>
 		</Router>
 	);

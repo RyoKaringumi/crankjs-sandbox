@@ -1,6 +1,6 @@
 /** @jsxImportSource @b9g/crank */
 import {renderer} from "@b9g/crank/dom";
-import { Greeting } from "./App";
+import App from "./App";
 
 
-renderer.render(<Greeting name="Crank" />, document.body);
+renderer.render(<App/>, document.body);

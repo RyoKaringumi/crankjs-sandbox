@@ -1,6 +1,8 @@
 /** @jsxImportSource @b9g/crank */
 
-export default function *Counter(this: any,props: unknown){
+import type { Context } from "@b9g/crank";
+
+export default function *Counter(this: Context){
 	let count = 0;
 
 	while (true){

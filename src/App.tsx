@@ -1,6 +1,9 @@
 /** @jsxImportSource @b9g/crank */
 
 import Counter from "./Counter";
+import Link from "./route/Link";
+import Route from "./route/Route";
+import Router from "./route/Router";
 import Simple from "./Simple";
 import Timer from "./Timer";
 import ToDo from "./todo/Todo";
@@ -9,18 +12,29 @@ export default function App() {
 	const component = <Simple message="hello"/>;
 	console.log(component);
 	return (
-		<div>
-			aaa
-			{/* <Counter/> */}
-			<ul>
-				<li>item 1</li>
-				<li>item 2</li>
-			</ul>
-			<Simple message="hello"/>
-			<Counter/>
-			<Timer/>
-			<hr/>
-			<ToDo/>
-		</div>
+		<Router>
+			<Route path="/">
+				<div>
+					aaa
+					{/* <Counter/> */}
+					<ul>
+						<li>item 1</li>
+						<li>item 2</li>
+					</ul>
+					<Simple message="hello"/>
+					<Counter/>
+					<Timer/>
+					<hr/>
+					<ToDo/>
+					<a href="/other">go to other page(a tag)</a>
+					<Link to="/other">go to other page(Link component)</Link>
+				</div>
+			</Route>
+			<Route path="/other">
+				<div>
+					other page
+				</div>
+			</Route>
+		</Router>
 	);
 }

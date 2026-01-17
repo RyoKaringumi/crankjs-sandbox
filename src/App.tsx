@@ -3,6 +3,7 @@
 import Counter from "./Counter";
 import Simple from "./Simple";
 import Timer from "./Timer";
+import ToDo from "./todo/Todo";
 
 export default function App() {
 	const component = <Simple message="hello"/>;
@@ -18,6 +19,8 @@ export default function App() {
 			<Simple message="hello"/>
 			<Counter/>
 			<Timer/>
+			<hr/>
+			<ToDo/>
 		</div>
 	);
 }

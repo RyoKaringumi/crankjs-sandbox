@@ -90,3 +90,4 @@ export default defineConfig([
 - Componentの型定義として正しいのは？
 - viteでの正しい設定方法
 - renderer.renderを複数回呼び出す場合の挙動
+- React.portalsの様な機能はあるか？

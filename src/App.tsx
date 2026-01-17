@@ -8,6 +8,7 @@ import SuspensePage from "./examples/suspense/SuspensePage";
 import MainPage from "./MainPage";
 import AsyncGeneratorPage from "./examples/async-generator/AsyncGeneratorPage";
 import TimingPage from "./examples/timing/TimingPage";
+import KeyPage from "./examples/key/KeyPage";
 
 export default function App() {
 	const component = <Simple message="hello"/>;
@@ -33,6 +34,9 @@ export default function App() {
 			</Route>
 			<Route path="/examples/timing">
 				<TimingPage/>
+			</Route>
+			<Route path="/examples/key">
+				<KeyPage/>
 			</Route>
 		</Router>
 	);

@@ -33,6 +33,8 @@ export default function MainPage(){
 			<Link to="/examples/async-generator">go to async generator page</Link>
 			<br/>
 			<Link to="/examples/timing">go to timing page</Link>
+			<br/>
+			<Link to="/examples/key">go to key page</Link>
 		</div>
 	)
 }

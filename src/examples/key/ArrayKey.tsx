@@ -9,6 +9,7 @@ type ListItemType = {
 
 function *Item(this:Context<typeof Item>, props:{item:ListItemType, items:ListItemType[],onChange:()=>void}){
 	console.log("Rendering Item", props.item.id);
+	const randomId = Math.random().toString(36).substring(2, 7);
 	for(props of this){
 		console.log("Re-Rendering Item", props.item.id);
 		const {item, items, onChange} = props;
@@ -27,7 +28,7 @@ function *Item(this:Context<typeof Item>, props:{item:ListItemType, items:ListIt
 				console.log("Swapped", item.id);
 			}}>Swap with next
 			
-			</button>{item.name}</li>
+			</button>{item.name} (ID: {randomId})</li>
 		);
 	}
 }

@@ -1,5 +1,13 @@
 /** @jsxImportSource @b9g/crank */
 
+/*
+<Component key={dataId} />とすることで、dataIdを更新すると、Componentの状態をリセットするテクニックがReactにあります。
+
+これが、Crankでも動作するかチェックするためのサンプルです
+
+試した結果、まったく同じ仕様で動作する事が確認出来たため、keyはReactと同じ仕様であると言えます。
+*/
+
 import type { Context } from "@b9g/crank";
 
 export function *Form(this:Context<typeof Form>){

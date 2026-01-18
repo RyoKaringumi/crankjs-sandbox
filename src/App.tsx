@@ -9,6 +9,7 @@ import MainPage from "./MainPage";
 import AsyncGeneratorPage from "./examples/async-generator/AsyncGeneratorPage";
 import TimingPage from "./examples/timing/TimingPage";
 import KeyPage from "./examples/key/KeyPage";
+import ComponentSyntaxPage from "./examples/component-syntax/ComponentSyntaxPage";
 
 export default function App() {
 	const component = <Simple message="hello"/>;
@@ -37,6 +38,9 @@ export default function App() {
 			</Route>
 			<Route path="/examples/key">
 				<KeyPage/>
+			</Route>
+			<Route path="/examples/component-syntax">
+				<ComponentSyntaxPage/>
 			</Route>
 		</Router>
 	);

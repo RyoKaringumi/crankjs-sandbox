@@ -35,6 +35,8 @@ export default function MainPage(){
 			<Link to="/examples/timing">go to timing page</Link>
 			<br/>
 			<Link to="/examples/key">go to key page</Link>
+			<br/>
+			<Link to="/examples/component-syntax">go to component syntax page</Link>
 		</div>
 	)
 }

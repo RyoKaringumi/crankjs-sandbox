@@ -32,7 +32,7 @@ export default function *ToDo(this: Context){
 				<hr/>
 				<h3>Todo List</h3>
 				{items.map(item=>(
-					<div>
+					<div key={item.text}>
 						<input type="checkbox" checked={item.completed} onChange={(e)=>{
 							// チェックボックスの状態が変わったときに、項目のcompletedプロパティを更新する
 							// refreshを利用して再レンダリングする

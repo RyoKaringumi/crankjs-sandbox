@@ -25,7 +25,7 @@ export default function *TimingPage(this:Context<typeof TimingPage>){
 				<h1>Timing Example</h1>
 				<Timing name={name} />
 				<div>
-					<input type="text" value={name} onInput={(e)=>{
+					<input type="text" value={name} onInput={(e: InputEvent)=>{
 						this.refresh(()=>{
 							name = (e.target as HTMLInputElement).value;
 						});
